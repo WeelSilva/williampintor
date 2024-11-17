@@ -16,13 +16,13 @@ $(document).ready(function(){
      });
 
      var typed = new Typed(".typing", {
-         strings:["Pintura simples", "Fino acabamento", "Texturas","Cimento queimado","Entre outros..."],
+         strings:["Pintura simples", "Texturas", "Cimento queimado", "Entre outros..."],
          typeSpeed:100,
          backSpeed:60,
          loop:true
      });
      var typed = new Typed(".typing-2", {
-        strings:["Simples", "Fino acabamento", "Texturas","Cimento queimado","Entre outros..."],
+        strings:["Pintura Simples", "Texturas", "Cimento queimado","Entre outros..."],
         typeSpeed:100,
         backSpeed:60,
         loop:true
