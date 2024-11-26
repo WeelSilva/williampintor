@@ -1,18 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 .max-width {
   max-width: 1300px;
   padding: 0 80px;
   margin: auto;
 }
+
 /*  navbar   inicio*/
 .navbar {
   position: fixed;
@@ -22,31 +26,38 @@ html {
   z-index: 999;
   transition: all 0.3s ease;
 }
+
 .navbar.sticky {
   background: #111;
   padding: 15px 0;
 }
+
 .navbar .max-width {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .navbar .logo a {
   color: #000;
   font-size: 35px;
   font-weight: 500;
 }
+
 .navbar .logo a span {
   color: #008000;
   transition: all 0.3s ease;
 }
+
 .navbar.sticky .logo a span {
   color: #000;
 }
+
 .navbar .menu li {
   list-style: none;
   display: inline-block;
 }
+
 .navbar .menu li a {
   color: #000;
   font-size: 18px;
@@ -54,12 +65,15 @@ html {
   margin-left: 25px;
   transition: color 0.3s ease;
 }
+
 .navbar .menu li a:hover {
   color: #008000;
 }
+
 .navbar.sticky .menu li a:hover {
   color: #008000;
 }
+
 /*  Home   inicio  */
 .home {
   display: flex;
@@ -70,25 +84,31 @@ html {
   min-height: 500px;
   font-family: "Ubuntu", sans-serif;
 }
+
 .home .max-width {
   margin: auto 0 auto 40px;
 }
+
 .home .home-content .text-1 {
   font-size: 27px;
 }
+
 .home .home-content .text-2 {
   font-size: 75px;
   font-weight: 500;
   margin-left: -3px;
 }
+
 .home .home-content .text-3 {
   font-size: 40px;
   margin: 5px 0;
 }
+
 .home .home-content .text-3 span {
   color: #008000;
   font-weight: 500;
 }
+
 .home .home-content a {
   display: inline-block;
   background: #008000;
@@ -99,6 +119,7 @@ html {
   border-radius: 6px;
   border: 2px solid #008000;
 }
+
 .home .home-content a:hover {
   color: #00a000;
   background: none;
@@ -111,6 +132,7 @@ html {
   cursor: pointer;
   display: none;
 }
+
 .scroll-up-btn {
   position: fixed;
   width: 41px;
@@ -129,6 +151,7 @@ html {
   pointer-events: none;
   transition: all 0.3s ease;
 }
+
 .scroll-up-btn.show {
   bottom: 30px;
   opacity: 1;
@@ -139,6 +162,7 @@ html {
 section {
   padding: 100px 0;
 }
+
 section .title {
   font-family: "Ubuntu", sans-serif;
   text-align: center;
@@ -148,6 +172,7 @@ section .title {
   padding-bottom: 20px;
   position: relative;
 }
+
 section .title::before {
   content: "";
   position: absolute;
@@ -158,6 +183,7 @@ section .title::before {
   background: #111;
   transform: translateX(-50%);
 }
+
 section .title::after {
   position: absolute;
   bottom: -12px;
@@ -168,6 +194,7 @@ section .title::after {
   padding: 5px;
   transform: translateX(-50%);
 }
+
 .about,
 .services,
 .skills,
@@ -176,6 +203,7 @@ section .title::after {
 footer {
   font-family: "Roboto", sans-serif;
 }
+
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
@@ -191,23 +219,29 @@ footer {
 .about .title::after {
   content: "Quem sou eu";
 }
+
 .about .about-content .left {
   width: 45%;
 }
+
 .about .about-content .right {
   width: 55%;
 }
+
 .about .about-content .right .text {
   font-size: 25px;
   font-weight: 500;
   margin-bottom: 10px;
 }
+
 .about .about-content .right .text span {
   color: #00a000;
 }
+
 .about .about-content .right p {
   text-align: justify;
 }
+
 .about .about-content .right a {
   display: inline-block;
   background: #008000;
@@ -220,31 +254,37 @@ footer {
   border: 2px solid #00a000;
   transition: all 0.3s ease;
 }
+
 .about .about-content .right a:hover {
   color: #008000;
   background: none;
 }
+
 .about .about-content .left img {
   width: 400px;
   height: 400px;
   object-fit: cover;
   border-radius: 6px;
 }
+
 /*  sessão serviços */
 .services,
 .teams {
   background: #111;
   color: #fff;
 }
+
 .services .title::before,
 .teams .title::before {
   background: #fff;
 }
+
 .services .title::after,
 .teams .title::after {
   background: #111;
   content: "Tipos de pintura";
 }
+
 .services .serv-content .card {
   width: calc(33% - 20px);
   background: #222;
@@ -254,42 +294,53 @@ footer {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .services .serv-content .card:hover {
   background: #00a000;
 }
+
 .services .serv-content .card .box {
   transition: all 0.3s ease;
 }
+
 .services .serv-content .card:hover .box {
   transform: scale(1.05);
 }
+
 .services .serv-content .card ion-icon {
   font-size: 70px;
   color: #008000;
 }
+
 .services .serv-content .card:hover ion-icon {
   color: #fff;
 }
+
 .services .serv-content .card .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
+
 /*  sessão especialidades  */
 .skills .title::after {
   content: "Entregues";
 }
+
 .skills .skills-content .column {
   width: calc(50% - 30px);
 }
+
 .skills .skills-content .left .text {
   font-size: 25px;
   font-weight: 500;
   margin-bottom: 10px;
 }
+
 .skills .skills-content .left p {
   text-align: justify;
 }
+
 .skills .skills-content .left a {
   display: inline-block;
   background: #008000;
@@ -302,28 +353,34 @@ footer {
   border: 2px solid #086788;
   transition: all 0.3s ease;
 }
+
 .skills .skills-content .left a:hover {
   color: #008000;
   background: none;
 }
+
 .skills .skills-content .right .bars {
   margin-bottom: 15px;
 }
+
 .skills .skills-content .right .info {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .skills .skills-content .right span {
   font-weight: 500;
   font-size: 18px;
 }
+
 .skills .skills-content .right .line {
   width: 100%;
   height: 5px;
   background: #ccc;
   position: relative;
 }
+
 .skills .skills-content .right .line::before {
   content: "";
   position: absolute;
@@ -332,28 +389,36 @@ footer {
   left: 0;
   background: #00a000;
 }
+
 .skills .skills-content .right .simples::before {
   width: 100%;
 }
+
 .skills .skills-content .right .facab::before {
   width: 100%;
 }
+
 .skills .skills-content .right .rolo::before {
   width: 100%;
 }
+
 .skills .skills-content .right .cqueimado::before {
   width: 100%;
 }
+
 .skills .skills-content .right .graf::before {
   width: 100%;
 }
+
 .skills .skills-content .right .graf::before {
   width: 100%;
 }
+
 /*  sessão projetos  */
 .project .title::after {
   content: "Os melhores";
 }
+
 .project .carousel .card {
   background: #222;
   border-radius: 6px;
@@ -362,9 +427,11 @@ footer {
   transition: all 0.3s ease;
   color: #fff;
 }
+
 .project .carousel .card:hover {
   background: #008000;
 }
+
 .project .carousel .card img {
   width: 300px;
   height: 300px;
@@ -373,9 +440,11 @@ footer {
   border: 4px solid #00a000;
   transition: all 0.3s ease;
 }
+
 .project .carousel .card:hover img {
   border-color: #fff;
 }
+
 .project .carousel .card .box {
   display: flex;
   flex-direction: column;
@@ -383,18 +452,22 @@ footer {
   justify-content: center;
   transition: all 0.3s ease;
 }
+
 .project .carousel .card:hover .box {
   transform: scale(1.05);
 }
+
 .project .carousel .card .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
+
 .owl-dots {
   text-align: center;
   margin-top: 20px;
 }
+
 .owl-dot {
   width: 14px;
   height: 14px;
@@ -403,10 +476,12 @@ footer {
   border: 2px solid #00a000 !important;
   transition: all 0.3s ease;
 }
+
 .owl-dot.active {
   width: 35px;
   border-radius: 15px;
 }
+
 .owl-dot.active,
 .owl-dot:hover {
   background: #00a000 !important;
@@ -415,13 +490,11 @@ footer {
 .btn {
   width: calc(5vw + 6px);
   height: calc(3vw + 6px);
-  background-image: linear-gradient(
-    90deg,
-    #00a000 0%,
-    #fff 49%,
-    #222 80%,
-    #00a000 100%
-  );
+  background-image: linear-gradient(90deg,
+      #00a000 0%,
+      #fff 49%,
+      #222 80%,
+      #00a000 100%);
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -431,6 +504,7 @@ footer {
   font-weight: bold;
   color: #222;
 }
+
 .btn:after {
   content: attr(alt);
   width: 20vw;
@@ -439,6 +513,7 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
 .btn:hover {
   animation: slidebg 2s linear infinite;
 }
@@ -453,37 +528,47 @@ footer {
 .contact .title::after {
   content: "Fale comigo";
 }
+
 .contact .contact-content .column {
   width: calc(50% - 30px);
 }
+
 .contact .contact-content {
   align-items: flex-start;
 }
+
 .contact .contact-content .left p {
   text-align: justify;
 }
+
 .contact .contact-content .text {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 10px;
 }
+
 .contact .contact-content .left .icons {
   margin: 10px 0;
 }
+
 .contact .contact-content .row {
   display: flex;
   height: 65px;
   align-items: center;
 }
+
 .contact .contact-content .row .info {
   margin-left: 30px;
 }
+
 .contact .contact-content .row .info .head {
   font-weight: 500;
 }
+
 .contact .contact-content .row .info .sub-title {
   color: #333;
 }
+
 .contact .contact-content .row ion-icon {
   font-size: 25px;
   color: #008000;
@@ -493,6 +578,7 @@ footer {
   width: 170px;
   height: 47px;
 }
+
 .contact .button-exit {
   text-align: center;
   width: 30%;
@@ -507,6 +593,7 @@ footer {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .contact .button-exit:hover {
   color: #00a000;
   background: none;
@@ -519,10 +606,12 @@ footer {
   color: #fff;
   text-align: center;
 }
+
 footer span a {
   color: #008000;
   text-decoration: none;
 }
+
 footer span a:hover {
   text-decoration: underline;
 }
@@ -533,26 +622,31 @@ footer span a:hover {
     margin-left: 0;
   }
 }
+
 @media (max-width: 1104px) {
   .about .about-content .left img {
     width: 350px;
     height: 350px;
   }
 }
+
 @media (max-width: 991px) {
   .navbar .max-width {
     padding: 0 50px;
   }
 }
+
 @media (max-width: 947px) {
   .max-width {
     max-width: 800px;
     padding: 0 50px;
   }
+
   .menu-btn {
     display: block;
     z-index: 999;
   }
+
   .navbar .menu {
     position: fixed;
     width: 100%;
@@ -564,76 +658,96 @@ footer span a:hover {
     text-align: center;
     transition: all 0.3s ease;
   }
+
   .navbar .menu.active {
     left: 0;
   }
+
   .navbar .menu li {
     display: block;
   }
+
   .navbar .menu li a {
     display: inline-block;
     margin: 20px 0;
     font-size: 25px;
   }
+
   .home .home-content .text-2 {
     font-size: 70px;
   }
+
   .home .home-content .text-3 {
     font-size: 35px;
   }
+
   .home .home-content a {
     font-size: 23px;
     padding: 10px 30px;
   }
+
   .about .about-content .column {
     width: 50%;
   }
+
   .about .about-content .left {
     display: flex;
     justify-content: center;
     margin: 0 auto 60px;
   }
+
   .about .about-content .right {
     flex: 100%;
   }
+
   .services .serv-content .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
+
   .skills .skills-content .column,
   .contact .contact-content .column {
     width: 100%;
     margin-bottom: 35px;
   }
+
   footer {
     margin-top: 15px;
   }
 }
+
 @media (max-width: 690px) {
   .home .home-content .text-2 {
     font-size: 60px;
   }
+
   .home .home-content .text-3 {
     font-size: 32px;
   }
+
   .home .home-content a {
     font-size: 20px;
   }
+
   .services .serv-content .card {
     width: 100%;
   }
 }
+
 @media (max-width: 500px) {
   .home .home-content .text-2 {
     font-size: 50px;
   }
+
   .home .home-content .text-3 {
     font-size: 27px;
   }
+
   .about .title {
     font-size: 4rem;
     padding-bottom: 2.3rem;
   }
+
   .services .title {
     font-size: 3rem;
     padding-bottom: 2.3rem;
@@ -643,6 +757,7 @@ footer span a:hover {
     width: calc(3vw + 6px);
     height: calc(2vw + 6px);
   }
+
   .project .btn {
     width: calc(10vw + 15px);
     height: calc(6vw + 7px);
@@ -656,13 +771,16 @@ footer span a:hover {
   .home .home-content .text-2 {
     font-size: 50px;
   }
+
   .home .home-content .text-3 {
     font-size: 27px;
   }
+
   .about .title {
     font-size: 4rem;
     padding-bottom: 2.3rem;
   }
+
   .services .title {
     font-size: 2.5rem;
     padding-bottom: 2.3rem;
@@ -672,6 +790,7 @@ footer span a:hover {
     width: calc(3vw + 6px);
     height: calc(2vw + 6px);
   }
+
   .project .btn {
     width: calc(10vw + 15px);
     height: calc(6vw + 7px);
@@ -679,6 +798,7 @@ footer span a:hover {
     text-align: center;
     font-weight: 600;
   }
+
   .skills .title {
     font-size: 2.2rem;
     padding-bottom: 2.3rem;
@@ -688,10 +808,12 @@ footer span a:hover {
     font-size: 2.2rem;
     padding-bottom: 2.3rem;
   }
+
   .contact .title {
     font-size: 2.2rem;
     padding-bottom: 2.3rem;
   }
+
   .contact .button-exit {
     width: 100%;
   }
